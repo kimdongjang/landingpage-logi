@@ -1,19 +1,23 @@
 import { FiAlignJustify } from "react-icons/fi";
-import './Header.module.scss'
+import style from './Header.module.scss'
 
 
 export const Header = () => {
     return (
-        <header className="flex w-100">
-            <FiAlignJustify />
-            <ul className="flex w-100 ">
-                <li>회사소개</li>
-                <li>서비스소개</li>
-                <li>특화서비스</li>
-                <li>시스템</li>
-                <li>고객지원</li>
-            </ul>
+        <header className={style.header}>
+            <div className={style.headerWrap}>
+                <FiAlignJustify />
+                <nav className={style.nav}>
+                    <ul>
+                        <li><a>회사소개</a></li>
+                        <li><a>서비스소개</a></li>
+                        <li><a>특화서비스</a></li>
+                        <li><a>시스템</a></li>
+                        <li><a>고객지원</a></li>
+                    </ul>
 
+                </nav>
+            </div>
         </header>
     );
 };

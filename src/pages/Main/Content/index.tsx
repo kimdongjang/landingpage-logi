@@ -24,32 +24,38 @@ export const Content = () => {
             <div className={style.SwiperContainer}>
                 <div className={style.SwiperWrap}>
                     <Swiper
-                        spaceBetween={30}
-                        centeredSlides={true}
                         effect={"fade"}
                         autoplay={{
-                            delay: 2500,
+                            delay: 1000,
                             disableOnInteraction: false,
                         }}
                         pagination={{
                             clickable: true,
+                            renderFraction: function (currentClass, totalClass) {
+                                return '<span class="' + currentClass + '"></span>' +
+                                    '<span class="barSpace">' +
+                                    '/</span>' +
+                                    '<span class="' + totalClass + '"></span>';
+                            }
                         }}
                         navigation={true}
+                        loop={true}
+
                         modules={[EffectFade, Autoplay, Pagination, Navigation]}
-                        onAutoplayTimeLeft={onAutoplayTimeLeft}
+                        // onAutoplayTimeLeft={onAutoplayTimeLeft}
                         className="mySwiper"
                     >
                         <SwiperSlide><img src={bg1}></img></SwiperSlide>
                         <SwiperSlide><img src={bg2}></img></SwiperSlide>
-                        <div className="autoplay-progress" slot="container-end">
+                        {/* <div className="autoplay-progress" slot="container-end">
                             <svg viewBox="0 0 48 48" ref={progressCircle}>
                                 <circle cx="24" cy="24" r="20"></circle>
                             </svg>
                             <span ref={progressContent}></span>
-                        </div>
+                        </div> */}
                     </Swiper>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
