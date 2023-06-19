@@ -1,0 +1,21 @@
+  .element {
+    &:after {
+      content: "";
+      position: relative;
+      left:50%;
+      transform: translate(-50%, 0);
+      height: 2px;
+      width: 0%;
+      display: block;
+      background-color: #1947ba;
+      // background-color:  $primaryColor;
+      transition: 0.5s ease-in-out;
+      background-position-y: bottom;
+    }
+    &:hover{
+      &:after {
+        width: 100%;
+      }
+    }
+    
+  }

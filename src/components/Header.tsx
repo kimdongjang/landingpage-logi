@@ -1,4 +1,5 @@
 import { FiAlignJustify } from "react-icons/fi";
+import { useMouseExpandLine } from "../hooks/useMouseExpandLine";
 import style from './Header.module.scss'
 
 
@@ -9,11 +10,11 @@ export const Header = () => {
                 <FiAlignJustify />
                 <nav className={style.nav}>
                     <ul>
-                        <li><a>회사소개</a></li>
-                        <li><a>서비스소개</a></li>
-                        <li><a>특화서비스</a></li>
-                        <li><a>시스템</a></li>
-                        <li><a>고객지원</a></li>
+                        <li><a {...useMouseExpandLine()}>회사소개</a></li>
+                        <li><a {...useMouseExpandLine()}>서비스소개</a></li>
+                        <li><a {...useMouseExpandLine()}>특화서비스</a></li>
+                        <li><a {...useMouseExpandLine()}>시스템</a></li>
+                        <li><a {...useMouseExpandLine()}>고객지원</a></li>
                     </ul>
 
                 </nav>
