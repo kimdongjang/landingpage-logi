@@ -29,7 +29,32 @@
         }
     }
 }
+.container{
+    position: fixed;
+    border: none;
+    border-radius: 0px;
+    padding: 12px;
+    transition: .4s;
+    background: transparent;
+    margin: 0;
+    height: 109px;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 8888;
+
+}
+
 .nav{
+    position: fixed;
+    border: none;
+    border-radius: 0px;
+    padding: 12px 0;
+    transition: .4s;
+    background: transparent;
+    margin: 0;
+    height: 109px;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 8888;
+
     height: 100%;
     display: flex;
 

@@ -23,48 +23,46 @@ const Main = () => {
     };
 
     return (
-        <div className={style.ContentWrap}>
+        <div className={style.MainWrap}>
             <div className={style.overlay}></div>
             <div className={style.SwiperContainer}>
-                <div className={style.SwiperWrap}>
-                    <div className={style.ContentWrap}>
-                        {/* Meet Minutes Landing page */}
-                    </div>
-                    <Swiper
-                        autoplay={{
-                            delay: 3000,
-                            disableOnInteraction: false,
-                        }}
-                        slidesPerView={1}
-                        spaceBetween={30}
-                        loop={true}
-                        effect={"fade"}
-                        navigation={true}
-                        pagination={{
-                            clickable: true,
-                            renderFraction: function (currentClass, totalClass) {
-                                return '<span class="' + currentClass + '"></span>' +
-                                    '<span class="barSpace">' +
-                                    '/</span>' +
-                                    '<span class="' + totalClass + '"></span>';
-                            }
-                        }}
+                <div className={style.ContentWrap}>
+                    <h2>Meet Minutes Landing page</h2>
+                </div>
+                <Swiper
+                    autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    }}
+                    slidesPerView={1}
+                    spaceBetween={30}
+                    loop={true}
+                    effect={"fade"}
+                    navigation={true}
+                    pagination={{
+                        clickable: true,
+                        renderFraction: function (currentClass, totalClass) {
+                            return '<span class="' + currentClass + '"></span>' +
+                                '<span class="barSpace">' +
+                                '/</span>' +
+                                '<span class="' + totalClass + '"></span>';
+                        }
+                    }}
 
-                        modules={[Autoplay, EffectFade, Pagination, Navigation]}
-                        // onAutoplayTimeLeft={onAutoplayTimeLeft}
-                        className="mySwiper"
-                    >
-                        <SwiperSlide><img src={bg1}></img></SwiperSlide>
-                        <SwiperSlide><img src={bg2}></img></SwiperSlide>
-                        <SwiperSlide><img src={bg3}></img></SwiperSlide>
-                        {/* <div className="autoplay-progress" slot="container-end">
+                    modules={[Autoplay, EffectFade, Pagination, Navigation]}
+                    // onAutoplayTimeLeft={onAutoplayTimeLeft}
+                    className="mySwiper"
+                >
+                    <SwiperSlide><img src={bg1}></img></SwiperSlide>
+                    <SwiperSlide><img src={bg2}></img></SwiperSlide>
+                    <SwiperSlide><img src={bg3}></img></SwiperSlide>
+                    {/* <div className="autoplay-progress" slot="container-end">
                             <svg viewBox="0 0 48 48" ref={progressCircle}>
                                 <circle cx="24" cy="24" r="20"></circle>
                             </svg>
                             <span ref={progressContent}></span>
                         </div> */}
-                    </Swiper>
-                </div>
+                </Swiper>
             </div>
             <div className={style.ScrollDownWrap}>
                 <p>Scroll</p>
