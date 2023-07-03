@@ -12,7 +12,7 @@ import 'swiper/css/navigation';
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
 import { useRef } from 'react';
 
-import style from './Content.module.scss'
+import style from './Main.module.scss'
 
 const Main = () => {
     const progressCircle = useRef(null);
@@ -28,6 +28,7 @@ const Main = () => {
             <div className={style.SwiperContainer}>
                 <div className={style.ContentWrap}>
                     <h2>Meet Minutes Landing page</h2>
+                    <p>Lorem ipsum dolor sit amet ipsum lectus neumew nulla rhoncus eu quam sit amet varius lectus eget ligula eleifend rutrum ac vel justo.</p>
                 </div>
                 <Swiper
                     autoplay={{

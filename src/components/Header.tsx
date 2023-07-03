@@ -17,8 +17,6 @@ export const Header = () => {
                         <li><a {...useMouseExpandLine()}>고객지원</a></li>
                     </ul>
                 </div>
-
-
             </nav>
         </header >
     );
