@@ -29,6 +29,10 @@ const Main = () => {
                 <div className={style.ContentWrap}>
                     <h2>Meet Minutes Landing page</h2>
                     <p>Lorem ipsum dolor sit amet ipsum lectus neumew nulla rhoncus eu quam sit amet varius lectus eget ligula eleifend rutrum ac vel justo.</p>
+                    <div>
+                        <input className={style.btn__default} type="button" value='PURCHASE' />
+                        <input className={style.btn__default} type="button" value='LEARN MORE' />
+                    </div>
                 </div>
                 <Swiper
                     autoplay={{

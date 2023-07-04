@@ -22,6 +22,36 @@
   left: 20%;
   top: 50%;
   z-index: 3;
+
+  h2 {
+    color: #fff;
+    font-size: 50px;
+    line-height: 55px;
+    margin: 0px 0px 10px;
+    letter-spacing: -1.5px;
+  }
+  p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 29px;
+    padding: 10px 22% 20px 0;
+    margin: 0;
+    opacity: 1;
+  }
+  div .btn__default {
+    color: #fff;
+    background-color: #00bcd4;
+    padding: 0px 40px;
+    line-height: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    border: medium none;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    border-radius: 0px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+  }
 }
 
 .ScrollDownWrap {
