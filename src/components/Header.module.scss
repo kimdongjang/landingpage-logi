@@ -1,21 +1,6 @@
 @import '../styles/utils';
 
 .header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  display: flex;
-  z-index: 50;
-  color: #fff;
-  height: 90px;
-  transition: background-color 0.5s;
-
-  &:hover {
-    background-color: #fff;
-    color: black;
-  }
-
   .headerWrap {
     display: flex;
     align-items: center;

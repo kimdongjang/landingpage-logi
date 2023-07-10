@@ -5,21 +5,22 @@ import style from './Header.module.scss'
 import styled from 'styled-components'
 
 
-const CHeader = styled.header<{ color: string, backgroundColor: string }>`
+const CHeader = styled.header<{ hoverBg: string, hoverColor: string, backgroundColor: string }>`
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     display: flex;
     z-index: 50;
-    color:${(props) => props.color};
+    color: #fff;
     height: 90px;
-    background-color: ${(props) => props.color}
-    transition: ${(props) => props.color}  0.5s;
-
+    transition: background-color 0.5s;
+    background-color: ${props => props.backgroundColor};
+  
     &:hover {
-    background-color: ${(props) => props.color};
-    color: ${(props) => props.backgroundColor};
+        transition: background-color 0.5s;
+      background-color: ${props => props.hoverBg};
+      color: ${props => props.hoverColor};
     }
 `
 
@@ -39,7 +40,7 @@ export const Header = () => {
     }
 
     return (
-        <CHeader color={!!useScroll ? 'black' : '#fff'} backgroundColor={!!useScroll ? '#fff' : 'black'}>
+        <CHeader hoverBg={!!useScroll ? '#222' : '#fff'} hoverColor={!!useScroll ? '#fff' : 'black'} backgroundColor={!!useScroll ? '#222' : 'null'}>
             <nav className={style.nav}>
                 <div className={style.container}>
                     {/* <FiAlignJustify /> */}
