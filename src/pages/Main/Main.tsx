@@ -26,14 +26,6 @@ const Main = () => {
         <div className={style.MainWrap}>
             <div className={style.overlay}></div>
             <div className={style.SwiperContainer}>
-                <div className={style.ContentWrap}>
-                    <h2>Meet Minutes Landing page</h2>
-                    <p>Lorem ipsum dolor sit amet ipsum lectus neumew nulla rhoncus eu quam sit amet varius lectus eget ligula eleifend rutrum ac vel justo.</p>
-                    <div>
-                        <input className={style.btn__default} type="button" value='PURCHASE' />
-                        <input className={style.btn__default} type="button" value='LEARN MORE' />
-                    </div>
-                </div>
                 <Swiper
                     autoplay={{
                         delay: 3000,
@@ -68,16 +60,27 @@ const Main = () => {
                             <span ref={progressContent}></span>
                         </div> */}
                 </Swiper>
+
+                <div className={style.ContentWrap}>
+                    <h2>Meet Minutes Landing page</h2>
+                    <p>Lorem ipsum dolor sit amet ipsum lectus neumew nulla rhoncus eu quam sit amet varius lectus eget ligula eleifend rutrum ac vel justo.</p>
+                    <div>
+                        <input className={style.btn__default} type="button" value='PURCHASE' />
+                        <input className={style.btn__default} type="button" value='LEARN MORE' />
+                    </div>
+                </div>
             </div>
+            {/* 스크롤 다운 아이콘 */}
             <div className={style.ScrollDownWrap}>
                 <p>Scroll</p>
                 <span className={style.ScrollDown}>
 
                 </span>
             </div>
+            {/* 섹션1 */}
             <div className={style.SectionContainer}>
-                <p>153로지스틱스의<br />
-                    다양한 서비스를 확인해 보세요.</p>
+
+
             </div>
             <div className={style.DateSectionContainer}>
                 <p className={style.tit}>물류의 최적화를 향한
