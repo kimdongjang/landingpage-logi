@@ -8,7 +8,7 @@ export const Header = () => {
         <header className={style.header}>
             <nav className={style.nav}>
                 <div className={style.container}>
-                    <FiAlignJustify />
+                    {/* <FiAlignJustify /> */}
                     <ul>
                         <li><a {...useMouseExpandLine()}>회사소개</a></li>
                         <li><a {...useMouseExpandLine()}>서비스소개</a></li>
