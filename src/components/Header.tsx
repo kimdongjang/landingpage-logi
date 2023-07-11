@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { FiAlignJustify } from "react-icons/fi";
 import { useMouseExpandLine } from "../hooks/useMouseExpandLine";
 import style from './Header.module.scss'
 import styled from 'styled-components'

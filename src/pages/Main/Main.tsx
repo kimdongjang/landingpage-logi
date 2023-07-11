@@ -11,8 +11,10 @@ import 'swiper/css/navigation';
 
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
 import { useRef } from 'react';
+import CircumIcon from "@klarr-agency/circum-icons-react";
 
 import style from './Main.module.scss'
+import useFadeEffect from '../../hooks/useFadeEffect';
 
 const Main = () => {
     const progressCircle = useRef(null);
@@ -61,7 +63,7 @@ const Main = () => {
                         </div> */}
                 </Swiper>
 
-                <div className={style.ContentWrap}>
+                <div {...useFadeEffect("right", 0.3)} className={style.ContentWrap}>
                     <h2>Meet Minutes Landing page</h2>
                     <p>Lorem ipsum dolor sit amet ipsum lectus neumew nulla rhoncus eu quam sit amet varius lectus eget ligula eleifend rutrum ac vel justo.</p>
                     <div>
@@ -79,6 +81,36 @@ const Main = () => {
             </div>
             {/* 섹션1 */}
             <div className={style.SectionContainer}>
+                <div className={style.SectionCard} {...useFadeEffect("down", 0.3)}>
+                    <div className="ico">
+                        <CircumIcon name="bank" color="#fff" size="48px" />
+                    </div>
+                    <h1>head</h1>
+                    <p>Lorem ipsum dolor sit amet consec tetur itaque autem neque adipi sicing elit repudiandae fugiat illo.</p>
+                </div>
+                <div className={style.SectionCard} {...useFadeEffect("down", 0.7)}>
+                    <div className="ico">
+                        <CircumIcon name="bank" color="#fff" size="48px" />
+                    </div>
+                    <h1>head</h1>
+                    <p>Lorem ipsum dolor sit amet consec tetur itaque autem neque adipi sicing elit repudiandae fugiat illo.</p>
+                </div>
+
+                <div className={style.SectionCard} {...useFadeEffect("down", 1.1)}>
+                    <div className="ico">
+                        <CircumIcon name="bank" color="#fff" size="48px" />
+                    </div>
+                    <h1>head</h1>
+                    <p>Lorem ipsum dolor sit amet consec tetur itaque autem neque adipi sicing elit repudiandae fugiat illo.</p>
+                </div>
+
+                <div className={style.SectionCard} {...useFadeEffect("down", 1.5)}>
+                    <div className="ico">
+                        <CircumIcon name="bank" color="#fff" size="48px" />
+                    </div>
+                    <h1>head</h1>
+                    <p>Lorem ipsum dolor sit amet consec tetur itaque autem neque adipi sicing elit repudiandae fugiat illo.</p>
+                </div>
 
 
             </div>
